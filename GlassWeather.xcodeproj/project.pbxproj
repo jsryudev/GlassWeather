@@ -14,6 +14,12 @@
 		3F89799E25E533E4004513F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F89799D25E533E4004513F0 /* ViewController.swift */; };
 		3F8979A325E533E5004513F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8979A225E533E5004513F0 /* Assets.xcassets */; };
 		3F8979A625E533E5004513F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8979A425E533E5004513F0 /* LaunchScreen.storyboard */; };
+		42304F3625E6319100E1EC1C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3525E6319100E1EC1C /* RxSwift */; };
+		42304F3825E6319100E1EC1C /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3725E6319100E1EC1C /* RxTest */; };
+		42304F3A25E6319100E1EC1C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3925E6319100E1EC1C /* RxRelay */; };
+		42304F3C25E6319100E1EC1C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3B25E6319100E1EC1C /* RxCocoa */; };
+		42304F3E25E6319100E1EC1C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3D25E6319100E1EC1C /* RxBlocking */; };
+		42304F4225E631E700E1EC1C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F4125E631E700E1EC1C /* ReactorKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42304F3625E6319100E1EC1C /* RxSwift in Frameworks */,
+				42304F3E25E6319100E1EC1C /* RxBlocking in Frameworks */,
+				42304F4225E631E700E1EC1C /* ReactorKit in Frameworks */,
+				42304F3825E6319100E1EC1C /* RxTest in Frameworks */,
+				42304F3C25E6319100E1EC1C /* RxCocoa in Frameworks */,
+				42304F3A25E6319100E1EC1C /* RxRelay in Frameworks */,
 				3F6948E525E53BA500190A1A /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +123,12 @@
 			name = GlassWeather;
 			packageProductDependencies = (
 				3F6948E425E53BA500190A1A /* Swinject */,
+				42304F3525E6319100E1EC1C /* RxSwift */,
+				42304F3725E6319100E1EC1C /* RxTest */,
+				42304F3925E6319100E1EC1C /* RxRelay */,
+				42304F3B25E6319100E1EC1C /* RxCocoa */,
+				42304F3D25E6319100E1EC1C /* RxBlocking */,
+				42304F4125E631E700E1EC1C /* ReactorKit */,
 			);
 			productName = GlassWeather;
 			productReference = 3F89799625E533E4004513F0 /* GlassWeather.app */;
@@ -141,6 +159,8 @@
 			mainGroup = 3F89798D25E533E4004513F0;
 			packageReferences = (
 				3F6948E325E53BA500190A1A /* XCRemoteSwiftPackageReference "Swinject" */,
+				42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				42304F4025E631E700E1EC1C /* XCRemoteSwiftPackageReference "ReactorKit" */,
 			);
 			productRefGroup = 3F89799725E533E4004513F0 /* Products */;
 			projectDirPath = "";
@@ -377,6 +397,22 @@
 				minimumVersion = 2.7.1;
 			};
 		};
+		42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.1;
+			};
+		};
+		42304F4025E631E700E1EC1C /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -384,6 +420,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F6948E325E53BA500190A1A /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		42304F3525E6319100E1EC1C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		42304F3725E6319100E1EC1C /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		42304F3925E6319100E1EC1C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		42304F3B25E6319100E1EC1C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		42304F3D25E6319100E1EC1C /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		42304F4125E631E700E1EC1C /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42304F4025E631E700E1EC1C /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
