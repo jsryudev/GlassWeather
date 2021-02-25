@@ -20,6 +20,10 @@
 		42304F3C25E6319100E1EC1C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3B25E6319100E1EC1C /* RxCocoa */; };
 		42304F3E25E6319100E1EC1C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F3D25E6319100E1EC1C /* RxBlocking */; };
 		42304F4225E631E700E1EC1C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F4125E631E700E1EC1C /* ReactorKit */; };
+		429E88E425E7535800E74FCA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 429E88E325E7535800E74FCA /* SnapKit */; };
+		429E88E825E7538F00E74FCA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 429E88E725E7538F00E74FCA /* Then */; };
+		429E88EC25E753D100E74FCA /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 429E88EB25E753D100E74FCA /* SwinjectAutoregistration */; };
+		429E88F025E7544100E74FCA /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 429E88EF25E7544100E74FCA /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +43,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				42304F3625E6319100E1EC1C /* RxSwift in Frameworks */,
+				429E88E825E7538F00E74FCA /* Then in Frameworks */,
+				429E88E425E7535800E74FCA /* SnapKit in Frameworks */,
+				429E88F025E7544100E74FCA /* RxMoya in Frameworks */,
 				42304F3E25E6319100E1EC1C /* RxBlocking in Frameworks */,
 				42304F4225E631E700E1EC1C /* ReactorKit in Frameworks */,
 				42304F3825E6319100E1EC1C /* RxTest in Frameworks */,
 				42304F3C25E6319100E1EC1C /* RxCocoa in Frameworks */,
+				429E88EC25E753D100E74FCA /* SwinjectAutoregistration in Frameworks */,
 				42304F3A25E6319100E1EC1C /* RxRelay in Frameworks */,
 				3F6948E525E53BA500190A1A /* Swinject in Frameworks */,
 			);
@@ -129,6 +137,10 @@
 				42304F3B25E6319100E1EC1C /* RxCocoa */,
 				42304F3D25E6319100E1EC1C /* RxBlocking */,
 				42304F4125E631E700E1EC1C /* ReactorKit */,
+				429E88E325E7535800E74FCA /* SnapKit */,
+				429E88E725E7538F00E74FCA /* Then */,
+				429E88EB25E753D100E74FCA /* SwinjectAutoregistration */,
+				429E88EF25E7544100E74FCA /* RxMoya */,
 			);
 			productName = GlassWeather;
 			productReference = 3F89799625E533E4004513F0 /* GlassWeather.app */;
@@ -161,6 +173,10 @@
 				3F6948E325E53BA500190A1A /* XCRemoteSwiftPackageReference "Swinject" */,
 				42304F3425E6319100E1EC1C /* XCRemoteSwiftPackageReference "RxSwift" */,
 				42304F4025E631E700E1EC1C /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				429E88E225E7535800E74FCA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				429E88E625E7538F00E74FCA /* XCRemoteSwiftPackageReference "Then" */,
+				429E88EA25E753D100E74FCA /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				429E88EE25E7544100E74FCA /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 3F89799725E533E4004513F0 /* Products */;
 			projectDirPath = "";
@@ -413,6 +429,38 @@
 				version = 2.1.1;
 			};
 		};
+		429E88E225E7535800E74FCA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		429E88E625E7538F00E74FCA /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		429E88EA25E753D100E74FCA /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		429E88EE25E7544100E74FCA /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -450,6 +498,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 42304F4025E631E700E1EC1C /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		429E88E325E7535800E74FCA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 429E88E225E7535800E74FCA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		429E88E725E7538F00E74FCA /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 429E88E625E7538F00E74FCA /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		429E88EB25E753D100E74FCA /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 429E88EA25E753D100E74FCA /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		429E88EF25E7544100E74FCA /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 429E88EE25E7544100E74FCA /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
