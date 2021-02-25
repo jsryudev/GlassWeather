@@ -97,10 +97,8 @@
 		3F8979B525E53564004513F0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3F89799925E533E4004513F0 /* AppDelegate.swift */,
-				3F89799B25E533E4004513F0 /* SceneDelegate.swift */,
-				3F89799D25E533E4004513F0 /* ViewController.swift */,
-				3F6948E025E53AC300190A1A /* AppDependency.swift */,
+				429E88F225E7567B00E74FCA /* Apps */,
+				429E88F325E7568C00E74FCA /* ViewControllers */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -111,6 +109,24 @@
 				3F8979A725E533E5004513F0 /* Info.plist */,
 			);
 			path = Supports;
+			sourceTree = "<group>";
+		};
+		429E88F225E7567B00E74FCA /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				3F89799925E533E4004513F0 /* AppDelegate.swift */,
+				3F6948E025E53AC300190A1A /* AppDependency.swift */,
+				3F89799B25E533E4004513F0 /* SceneDelegate.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		429E88F325E7568C00E74FCA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F89799D25E533E4004513F0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
