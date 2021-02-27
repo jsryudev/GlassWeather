@@ -14,6 +14,7 @@
 		3F8979A325E533E5004513F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8979A225E533E5004513F0 /* Assets.xcassets */; };
 		3F8979A625E533E5004513F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8979A425E533E5004513F0 /* LaunchScreen.storyboard */; };
 		3FE4C7FC25E930FF001F3067 /* GlassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE4C7FB25E930FF001F3067 /* GlassViewController.swift */; };
+		3FE4C80025E9336F001F3067 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE4C7FF25E9336F001F3067 /* GlassView.swift */; };
 		42304F4225E631E700E1EC1C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F4125E631E700E1EC1C /* ReactorKit */; };
 		4296320825E7597E00F6D895 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F89799D25E533E4004513F0 /* BaseViewController.swift */; };
 		4296320925E7597E00F6D895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E88F525E7580D00E74FCA /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		3F8979A525E533E5004513F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8979A725E533E5004513F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE4C7FB25E930FF001F3067 /* GlassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassViewController.swift; sourceTree = "<group>"; };
+		3FE4C7FF25E9336F001F3067 /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
 		429E88F525E7580D00E74FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 			children = (
 				429E88F225E7567B00E74FCA /* Apps */,
 				429E88F325E7568C00E74FCA /* ViewControllers */,
+				3FE4C7FE25E93354001F3067 /* Views */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -109,6 +112,14 @@
 				3F8979A725E533E5004513F0 /* Info.plist */,
 			);
 			path = Supports;
+			sourceTree = "<group>";
+		};
+		3FE4C7FE25E93354001F3067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FE4C7FF25E9336F001F3067 /* GlassView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		429E88F225E7567B00E74FCA /* Apps */ = {
@@ -225,6 +236,7 @@
 				3F89799A25E533E4004513F0 /* AppDelegate.swift in Sources */,
 				3FE4C7FC25E930FF001F3067 /* GlassViewController.swift in Sources */,
 				3F6948E125E53AC300190A1A /* AppDependency.swift in Sources */,
+				3FE4C80025E9336F001F3067 /* GlassView.swift in Sources */,
 				3F89799C25E533E4004513F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
