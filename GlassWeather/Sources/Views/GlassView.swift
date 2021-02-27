@@ -10,9 +10,10 @@ import UIKit
 class GlassView: UIVisualEffectView {
 
   init(alpha: CGFloat = 0.3) {
-    let blur = UIBlurEffect(style: .light)
+    let blur = UIBlurEffect(style: .extraLight)
     super.init(effect: blur)
     self.alpha = alpha
+    self.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     self.clipsToBounds = true
     self.setupLayer()
   }
