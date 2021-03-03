@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "AnimatedGradientView",
+        "repositoryURL": "https://github.com/rwbutler/AnimatedGradientView.git",
+        "state": {
+          "branch": null,
+          "revision": "634f0f1399a536abe5cc30762f0d015d72e6b07e",
+          "version": "3.1.0"
+        }
+      },
+      {
         "package": "Logger",
         "repositoryURL": "https://github.com/shibapm/Logger",
         "state": {

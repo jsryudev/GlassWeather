@@ -15,6 +15,7 @@
 		3F8979A625E533E5004513F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8979A425E533E5004513F0 /* LaunchScreen.storyboard */; };
 		3FE4C7FC25E930FF001F3067 /* GlassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE4C7FB25E930FF001F3067 /* GlassViewController.swift */; };
 		3FE4C80025E9336F001F3067 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE4C7FF25E9336F001F3067 /* GlassView.swift */; };
+		421B2DEE25EF3F4E00071CE7 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 421B2DED25EF3F4E00071CE7 /* AnimatedGradientView */; };
 		42304F4225E631E700E1EC1C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 42304F4125E631E700E1EC1C /* ReactorKit */; };
 		4296320825E7597E00F6D895 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F89799D25E533E4004513F0 /* BaseViewController.swift */; };
 		4296320925E7597E00F6D895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E88F525E7580D00E74FCA /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421B2DEE25EF3F4E00071CE7 /* AnimatedGradientView in Frameworks */,
 				4296321525E75B0F00F6D895 /* RxRelay in Frameworks */,
 				429E88E825E7538F00E74FCA /* Then in Frameworks */,
 				429E88E425E7535800E74FCA /* SnapKit in Frameworks */,
@@ -168,6 +170,7 @@
 				4296321025E75B0F00F6D895 /* RxSwift */,
 				4296321225E75B0F00F6D895 /* RxCocoa */,
 				4296321425E75B0F00F6D895 /* RxRelay */,
+				421B2DED25EF3F4E00071CE7 /* AnimatedGradientView */,
 			);
 			productName = GlassWeather;
 			productReference = 3F89799625E533E4004513F0 /* GlassWeather.app */;
@@ -204,6 +207,7 @@
 				429E88EA25E753D100E74FCA /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
 				429E88EE25E7544100E74FCA /* XCRemoteSwiftPackageReference "Moya" */,
 				4296320F25E75B0F00F6D895 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				421B2DEC25EF3F4E00071CE7 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 			);
 			productRefGroup = 3F89799725E533E4004513F0 /* Products */;
 			projectDirPath = "";
@@ -443,6 +447,14 @@
 				minimumVersion = 2.7.1;
 			};
 		};
+		421B2DEC25EF3F4E00071CE7 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
 		42304F4025E631E700E1EC1C /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
@@ -498,6 +510,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F6948E325E53BA500190A1A /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		421B2DED25EF3F4E00071CE7 /* AnimatedGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 421B2DEC25EF3F4E00071CE7 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			productName = AnimatedGradientView;
 		};
 		42304F4125E631E700E1EC1C /* ReactorKit */ = {
 			isa = XCSwiftPackageProductDependency;
